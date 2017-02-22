@@ -11,6 +11,6 @@ for root, dirs, files in os.walk('./svg'):
 
 fo = open('./icons.json', 'r+');
 
-fo.write(json.dumps(result, indent = 4));
+fo.write(json.dumps(result, indent = 4, sort_keys=True));
 
 fo.close();
